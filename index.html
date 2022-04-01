@@ -1,11 +1,3 @@
-<?php
-
-    $filename = $_SERVER["SCRIPT_FILENAME"];
-    if (file_exists($filename)) {
-        $mtime = filemtime($filename);
-    }
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +11,7 @@
     <link rel="stylesheet" href="./public/libs/intTelInput/css/intlTelInput.css">
     <link rel="stylesheet" href="./public/libs/intTelInput/css/demo.css">
     
-    <link rel="stylesheet" href="./public/css/main.css?<?php echo $mtime; ?>">
+    <link rel="stylesheet" href="./public/css/main.css">
 </head>
 <body>
     
@@ -39,6 +31,6 @@
     <script src="./public/libs/intTelInput/js/intlTelInput.js"></script> 
     <script src="./public/libs/intTelInput/js/utils.js"></script> 
     <script src="./public/libs/maskedinput-1.4.1/jquery.maskedinput-1.4.1.min.js"></script> 
-    <script src="./public/js/main.js?<?php echo $mtime; ?>"></script> 
+    <script src="./public/js/main.js"></script> 
 </body>
 </html>
